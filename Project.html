@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Blog</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="Project.css" />
+  </head>
+  <body>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(-45deg, #fdfaf7, #f3ebff, #e0d4f7, #fdfaf7);
+        background-size: 400% 400%;
+        animation: gradientBG 15s ease infinite;
+      }
+
+      @keyframes gradientBG {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
+      .parent {
+        text-align: center;
+        padding: 100px 20px 60px;
+      }
+      .parent h5 {
+        color: #7854cd;
+        width: 82px;
+        height: 28px;
+        position: absolute;
+        left: 47%;
+        top: 10%;
+        padding: 13px 12px 0 12px;
+        border-radius: 16px;
+        background-color: #f3ebff;
+        width: 82px;
+        height: 28;
+        mix-blend-mode: Multiply;
+      }
+      .parent h1 {
+        margin: 20px auto 40px;
+        color: #2c2c54;
+        font-size: 3rem;
+        max-width: 700px;
+      }
+      .parent p {
+        color: #6941c6;
+      }
+      .search-box {
+        display: inline-block;
+        position: relative;
+        width: 200px;
+      }
+      .search-box input {
+        width: 100%;
+        padding: 10px 40px 10px 35px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px;
+      }
+      .search-box i {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #888;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
+      .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+      }
+      .card-content {
+        padding: 16px;
+        flex: 1;
+      }
+      .category {
+        font-size: 12px;
+        font-weight: bold;
+        color: #6366f1;
+        margin-bottom: 8px;
+        text-transform: uppercase;
+      }
+      .title {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 0 8px;
+      }
+      .description {
+        font-size: 13px;
+        color: #6b7280;
+        margin-bottom: 12px;
+      }
+      .author {
+        display: flex;
+        align-items: center;
+      }
+      .author img {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+      .author-name {
+        font-size: 13px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .author-date {
+        font-size: 11px;
+        color: #9ca3af;
+        margin: 0;
+      }
+
+      .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+      }
+
+      .load-more-btn {
+        padding: 12px 24px;
+        background-color: #7c3aed;
+        color: #ffffff;
+        border: none;
+        border-radius: 9999px;
+        cursor: pointer;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .load-more-btn:hover {
+        background-color: #6b21a8;
+      }
+    </style>
+
+    <section class="parent">
+      <h5>Our blog</h5>
+      <h1>Resources and insights</h1>
+      <p>The latest industry news, interviews, technologies, and resources.</p>
+      <div class="search-box">
+        <i class="fa fa-search"></i>
+        <input type="search" placeholder="Search..." class="placeholder" />
+      </div>
+    </section>
+
+    <div class="grid">
+      <div class="card">
+        <img src="./Image.png" alt="Image" />
+        s
+        <div class="card-content">
+          <div class="category">Design</div>
+          <h3 class="title">UX review presentations</h3>
+          <p class="description">
+            How do you create compelling presentations that wow your colleagues?
+          </p>
+          <div class="author">
+            <img
+              src="https://randomuser.me/api/portraits/women/44.jpg"
+              alt="Avatar"
+            />
+            <div>
+              <p class="author-name">Olivia Waya</p>
+              <p class="author-date">Mar 16, 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./Image (1).png" alt="Image" />
+        <div class="card-content">
+          <div class="category" style="color: #6941c6">Product</div>
+          <h3 class="title">Migrating to Linear 101</h3>
+          <p class="description">
+            Linear helps streamline your software projects, sprints, and
+            tracking.
+          </p>
+          <div class="author">
+            <img
+              src="https://randomuser.me/api/portraits/men/32.jpg"
+              alt="Avatar"
+            />
+            <div>
+              <p class="author-name">Marcin Bukur</p>
+              <p class="author-date">Mar 10, 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./Image (2).png" alt="Image" />
+        <div class="card-content">
+          <div class="category" style="color: #6941c6">
+            Software Engineering
+          </div>
+          <h3 class="title">Building your API Stack</h3>
+          <p class="description">
+            The best REST API stack for managing data efficiently.
+          </p>
+          <div class="author">
+            <img
+              src="https://randomuser.me/api/portraits/women/47.jpg"
+              alt="Avatar"
+            />
+            <div>
+              <p class="author-name">Lara Shaze</p>
+              <p class="author-date">Feb 28, 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./Image (3).png" alt="Image" />
+        <div class="card-content">
+          <div class="category" style="color: #6941c6">Management</div>
+          <h3 class="title">Bill Walsh leadership lessons</h3>
+          <p class="description">
+            Like to know the secrets of transforming a 2-14 team into a 3x Super
+            Bowl winning Dynasty?
+          </p>
+          <div class="author">
+            <img src="./Avatar.png" alt="Avatar" />
+            <div>
+              <p class="author-name">Demi WIlkinson</p>
+              <p class="author-date">16 Jan 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./Image (4).png" alt="Image" />
+        <div class="card-content">
+          <div class="category" style="color: #6941c6">PM mental models</div>
+          <h3 class="title"></h3>
+          <p class="description">
+            Mental models are simple expressions of complex processes or
+            relationships.
+          </p>
+          <div class="author">
+            <img src="./Avatar (1).png" alt="Avatar" />
+            <div>
+              <p class="author-name">Demi WIlkinson</p>
+              <p class="author-date">16 Jan 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./Image (5).png" alt="Image" />
+        <div class="card-content">
+          <div class="category" style="color: #6941c6">PM mental models</div>
+          <h3 class="title"></h3>
+          <p class="description">
+            Mental models are simple expressions of complex processes or
+            relationships.
+          </p>
+          <div class="author">
+            <img src="./Avatar (2).png" alt="Avatar" />
+            <div>
+              <p class="author-name">Candice Wu</p>
+              <p class="author-date">15 Jan 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./Image (6).png" alt="Image" />
+        <div class="card-content">
+          <div class="category" style="color: #6941c6">Design</div>
+          <h3 class="title">How collaboration makes us better designers</h3>
+          <p class="description">
+            Collaboration can make our teams stronger, and our individual
+            designs better.
+          </p>
+          <div class="author">
+            <img src="./Avatar (3).png" alt="Avatar" />
+            <div>
+              <p class="author-name">Natail Craig</p>
+              <p class="author-date">14 Jan 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./Image (7).png" alt="Image" />
+        <div class="card-content">
+          <div class="category" style="color: #6941c6">Product</div>
+          <h3 class="title">How collaboration makes us better designers</h3>
+          <p class="description">
+            JavaScript frameworks make development easy with extensive features
+            and functionalities.
+          </p>
+          <div class="author">
+            <img src="./Avatar (4).png" alt="Avatar" />
+            <div>
+              <p class="author-name">Drew Cano</p>
+              <p class="author-date">13 Jan 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./Image (8).png" alt="Image" />
+        <div class="card-content">
+          <div class="category" style="color: #6941c6">Customer Success</div>
+          <h3 class="title">Podcast: Creating a better CX Community</h3>
+          <p class="description">
+            Starting a community doesn't need to be complicated, but how do you
+            get started?
+          </p>
+          <div class="author">
+            <img src="./Avatar (5).png" alt="Avatar" />
+            <div>
+              <p class="author-name">Orlando Diggs</p>
+              <p class="author-date">12 Jan 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="button-container">
+      <button class="load-more-btn">Load more</button>
+    </div>
+  </body>
+</html>
